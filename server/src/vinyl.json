@@ -1,0 +1,76 @@
+[
+    {
+        "name": "The Miseducation of Lauryn Hill - Lauryn Hill (2-LP)", 
+        "price": "$29.99", 
+        "description": "The debut solo album from the infamous Miss Lauryn Hill. This concept album explores themes of love, relationships, motherhood, and faith, blending neo-soul, R&B, hip-hop, raggae, and soul genres. The album is noted for its raw, emotional, and personal lyrics, reflecting Lauryn Hill's own experiences and challenges.",
+        "image": "images/The_Miseducation_of_Lauryn_Hill.png"
+    },
+     {
+        "name": "Thriller - Michael Jackson (1-LP)", 
+        "price": "$24.99", 
+        "description": "Best-Selling Album of All Time. Known for its innovative blend of genres like pop, rock, RnB, funk, and its groundbreaking music videos.",
+        "image": "images/Michael_Jackson_-_Thriller.png"
+    },
+     {
+        "name": "Enter the Wu-Tang (36 Chambers) - Wu-Tang Clan (2-LP)", 
+        "price": "$29.99", 
+        "description": "The debut solo album of Wu-Tang Clan. This is a landmark hip-hop album that is celebrated for its raw, gritty sound, distinctive production style, and the unique lyrical styles of its nine members. The album's title is inspired by the martial arts film: The 36th Chamber of Shaolin.",
+        "image": "images/Wu-TangClanEntertheWu-Tangalbumcover.jpg"
+    },
+     {
+        "name": "Baduizm - Erykah Badu (2-LP)", 
+        "price": "$36.99", 
+        "description": "This debut album is considered to be a landmark album in the neo-soul genre, known for its blend of jazz, soul, RnB, and hip-hop influences. This album explores the themes of love, relationships, spirituality, and self-discovery. A cultural touchstone that helped define a new sound and aesthetic in Rnb.",
+        "image": "images/BaduizmErykah.jpg"
+    },
+     {
+        "name": "To Pimp A Butterfly - Kendrick Lamar (2-LP)", 
+        "price": "$35.99", 
+        "description": "A critically album that is considered to be Kendrick's complex and deeply personal work that explores themes of racism, self-love, adn the burdens of fame, all while incorporating various musical styles like jazz, funk, and soul.",
+        "image": "images/tpab.png"
+    },
+     {
+        "name": "Anti - Rihanna (2-LP)", 
+        "price": "$39.99", 
+        "description": " An album that defines easy categorization, described as Anti-establishment, anti-expectations, and anti-colonial. An album of experimentation, showcasing Rihanna's vocal versatility and exploration of different genres. This album is considered to be her most compelling and personal work.",
+        "image": "images/Rihanna_-_Anti.png"
+    },
+     {
+        "name": "The Low End Theory - A Tribe Called Quest (2-LP)", 
+        "price": "$29.99", 
+        "description": " A Tribe Called Quest's sophomore alnbum. This is considered to be a landmark albumm in hip-hop, known for its innovative blend of jazz and hardcore hip-hop, its intricate sampling, and its unique sound characterized by a focus on low-end frequencies.",
+        "image": "images/low-end-theory.jpg"
+    },
+     {
+        "name": "Songs In The Key of Life - Stevie Wonder (2-LP)", 
+        "price": "$45.99", 
+        "description": "Stevie Wonder's magnum opus and one of the most significant albums in popular music history. The album is a culmination of a period of extraordinary creativity for Stevie Wonder, demonstrating his mastery of songwriting, arrangement, and multi-instrumental performance.",
+        "image": "images/Songs_in_the_key_of_life.jpg"
+    },
+     {
+        "name": "Illmatic - Nas (1-LP)", 
+        "price": "$23.99", 
+        "description": "His critically acclaimed studio album. Illmatic is regarded as a classic of East Coast Hip-Hop and is celebrated for its intricate storytelling, raw lyricism, and vivid description of life in the Queensbridge housiing projects.",
+        "image": "images/IllmaticNas.jpg"
+    },
+     {
+        "name": "What's Going On - Marvin Gaye (1-LP)", 
+        "price": "$29.99", 
+        "description": "A concept album that explores social issues like Vietnam War, environmental injustice, and economic disparities. A soulful masterpiece that uses introspective lyrics and a unified song cycle to address these themes, with a focus on experiences of a Vietnam veteran returning home to a trouble society.",
+        "image": "images/marvin.jpg"
+    },
+     {
+        "name": "My Life - Mary J. Blige (2-LP)", 
+        "price": "$32.99", 
+        "description": "From the Queen of Hip-Hop Soul, My Life is a deeply personal and vulnerable work, where Blige explores themes of love, loss, and resiliance through a blend of vintage soul samples and hip-hop elements.",
+        "image": "images/my-life.jpg"
+        
+    },
+     {
+        "name": "Speakerboxxx/The Love Below - Outkast (4-LP)", 
+        "price": "$44.99", 
+        "description": "A double album by the hip-hop duo Outkast. Speakerboxxx is a Southern hip-hop album with a P-Funk influence, while The Love Below explores funk, pop, psychedelic, and jazz styles.",
+        "image": "images/Speakerboxxx-The_Love_Below.png"
+    }
+]
+
