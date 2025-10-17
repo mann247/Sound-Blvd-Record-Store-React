@@ -23,6 +23,7 @@ A vinyl inspired e-commerce website built with HTML, CSS, and JavaScript. Users 
 1. HTML5
 2. CSS3
 3. JavaScript
+4. React
 
 
 👩🏾‍💻Author
