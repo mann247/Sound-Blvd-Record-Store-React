@@ -1,0 +1,315 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #ebe9e9; 
+    color: #222;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
+
+/*header*/
+header nav{
+    background-color: #111;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    padding: 15px;
+}
+
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav a:focus, a:hover{
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    color: #e91e63;
+}
+h4{
+    text-align: center;
+    color: #e91e63;
+} a{
+    text-decoration: none;
+} h4:hover{
+    text-decoration: underline;
+    color: #e91e63;
+}
+
+
+/*Hero Section*/
+.hero{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0 0 32px;
+    overflow: hidden;
+}
+
+.hero-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 4/3;
+}
+
+.hero-text{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 19px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.btn{
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+.btn:hover, .btn:focus{
+    background-color: #c2185b;
+}
+
+/* About Us Section */
+.about{
+    background-color: rgba(0,0,0,0.1); 
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.about-text{
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 20px;
+}
+.about h2{
+    font-size: 2rem;
+    color: #e91e63;
+    margin-bottom: 20px;
+}
+
+.about p{
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-btn{
+    display: inline-block;
+    background-color: #e91e63;
+    padding: 12px 25px;
+    border-radius: 4px;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+.about-btn:hover, .about-btn:focus{
+    background-color: #c2185b;
+}
+
+#home-events{
+  color: #e91e63;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Product Grid (mobile)*/
+.product-grid{
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.product-card{
+    background: rgba(0,0,0,0.1); 
+    border-radius: 8px;
+    box-shadow: 0 2px 6px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s ease; 
+}
+
+.product-card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.product-card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.price{
+    color: #e91e63;
+    font-weight: bold;
+}
+
+.cart-button{
+    background-color: #222;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}.cart-button:hover{
+   background-color: #444;
+}
+
+/*Contact Page*/
+form{
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 20px;
+}
+label{
+    display: block;
+    margin: 12px 0 4px;
+}
+input, textarea{
+    background-color: whitesmoke;
+    width: 100%;
+    padding: .4rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contact_form_info{
+  text-align: center;
+  margin: 10px;
+}
+
+#btn-contact{
+    display: grid;
+    place-items: center;
+    width: 10vh;
+    background-color: #222;
+    color: whitesmoke;
+    border: none;
+    padding: 10px;
+    margin-top: 1.5em;
+    cursor: pointer;
+    border-radius: 4px;
+
+}#btn-contact:hover{
+    background-color: #444;
+}
+
+/* Error Messages (From JS) */
+.error-msg{
+    color: red;
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 4px;
+}
+.input-error{
+    border: 2px solid red;
+    outline: none;
+}
+.input-ok{
+    border: 2px solid #2ecc71;
+    outline: none;
+}
+
+/* Footer */
+
+footer{
+    /* position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0; */
+    background-color: #111;
+    color:whitesmoke;
+    text-align: center;
+    padding: 15px;
+}
+.social-media a{
+    color: #e91e63;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-media img{
+    width: 1.5rem;
+    color: #e91e63;
+}
+.social-media a:hover, .social-media a:focus{
+    text-decoration: underline;
+}
+
+/* Responsiveness for tablets and desktops */
+@media (min-width: 800px){
+    header nav{
+        justify-content: right;
+        gap: 24px;
+    }
+    .hero-img{
+        aspect-ratio: 21/9;
+    }
+    .hero-text{
+        padding: 32px;
+        font-size: 1.1rem;
+    }
+    .product-grid{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    }
+
+    .marquee-item img{
+        height: 200px;
+    }
+}
+
+
+@media(min-width: 800px){
+    .marquee-item img{
+        height: 200px;
+        width: auto;
+    }
+} 
+
+
+@media(max-width: 800px){
+    .about{
+        padding: 20px;
+    }
+    .about h2{
+        font-size: 1.5rem;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+}

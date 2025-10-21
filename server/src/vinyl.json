@@ -1,76 +1,91 @@
 [
     {
-        "name": "The Miseducation of Lauryn Hill - Lauryn Hill (2-LP)", 
+        "name": "The Miseducation of Lauryn Hill", 
+        "artist": "Lauryn Hill",
+        "product type": "2 LP",
         "price": "$29.99", 
         "description": "The debut solo album from the infamous Miss Lauryn Hill. This concept album explores themes of love, relationships, motherhood, and faith, blending neo-soul, R&B, hip-hop, raggae, and soul genres. The album is noted for its raw, emotional, and personal lyrics, reflecting Lauryn Hill's own experiences and challenges.",
         "image": "images/The_Miseducation_of_Lauryn_Hill.png"
     },
      {
-        "name": "Thriller - Michael Jackson (1-LP)", 
-        "price": "$24.99", 
-        "description": "Best-Selling Album of All Time. Known for its innovative blend of genres like pop, rock, RnB, funk, and its groundbreaking music videos.",
-        "image": "images/Michael_Jackson_-_Thriller.png"
+        "name": "Voodoo", 
+        "artist": "D'Angelo",
+        "product type": "2 LP",
+        "price": "$38.99", 
+        "description": "Released in 2000, Voodoo was the second album by D'Angelo and followed-up his hit album Brown Sugar. Recording sessions for the album took place during 1998 to 1999 at Electric Lady Studios in New York City, featuring an extensive line-up of musicians associated with the Soulquarians musical collective. Produced primarily by D'Angelo, Voodoo features a loose, groove-based funk sound and serves as a departure from the more conventional song structure of Brown Sugar. The album features lyrical themes regarding spirituality, love, sexuality, growth, and fatherhood.",
+        "image": "images/voodoo.png"
     },
      {
-        "name": "Enter the Wu-Tang (36 Chambers) - Wu-Tang Clan (2-LP)", 
-        "price": "$29.99", 
-        "description": "The debut solo album of Wu-Tang Clan. This is a landmark hip-hop album that is celebrated for its raw, gritty sound, distinctive production style, and the unique lyrical styles of its nine members. The album's title is inspired by the martial arts film: The 36th Chamber of Shaolin.",
-        "image": "images/Wu-TangClanEntertheWu-Tangalbumcover.jpg"
+        "name": "Aijuswanaseing", 
+        "artist": "Musiq Soulchild",
+        "product type": "2 LP",
+        "price": "$35.99",
+        "description": "With his 2000 debut album, Aijuswanaseing (I Just Want to Sing), Musiq Soulchild made an indelible mark on the R&B soundscape. Aijuswanaseing is a remarkable collection of songs that successfully showcases Soulchild's vocal talent and versatility as he crisscrosses the analogous styles of R&B, soul, and rap.",
+        "image": "images/musiq.jpg"
     },
      {
-        "name": "Baduizm - Erykah Badu (2-LP)", 
-        "price": "$36.99", 
-        "description": "This debut album is considered to be a landmark album in the neo-soul genre, known for its blend of jazz, soul, RnB, and hip-hop influences. This album explores the themes of love, relationships, spirituality, and self-discovery. A cultural touchstone that helped define a new sound and aesthetic in Rnb.",
-        "image": "images/BaduizmErykah.jpg"
+        "name": "Worldwide Underground (1-LP)", 
+        "artist": "Erykah Badu",
+         "product type": "1 LP",
+        "price": "$26.99", 
+        "description": "A massive return to form for singer / songwriter Erykah Badu's third studio album Worldwide Underground. It is a collection of songs firmly rooted in soul without being nostalgic, recalling a time when ceilings where higher and folk weren't afraid to let the music play. She is surer, braver, directed, focused and a touch lighter. This is a total groove album and is 100% refreshing.",
+        "image": "images/worldwide.jpg"
     },
      {
-        "name": "To Pimp A Butterfly - Kendrick Lamar (2-LP)", 
+        "name": "Who is Jill Scott? Words and Sounds, Vol. 1 (2-LP)", 
+        "artist": "Jill Scott",
         "price": "$35.99", 
-        "description": "A critically album that is considered to be Kendrick's complex and deeply personal work that explores themes of racism, self-love, adn the burdens of fame, all while incorporating various musical styles like jazz, funk, and soul.",
-        "image": "images/tpab.png"
+        "description": "Jill Scott's debut alum is a neo-soul classic that introduced the world to her signature blend of soulful vocals, poetic lyricism, and jazz-infused grooves. Who is Jill Scott? Words and Sounds Vol. 1 moves effortlessly through love, growth, and self-expression. Pressed with rich production and live instrumentation, this album defined the sound of early 2000s soul and remains one of the genre's most essential listens.",
+        "image": "images/jilly.png"
     },
      {
-        "name": "Anti - Rihanna (2-LP)", 
+        "name": "Maxwell's Urban Hang Suite (2-LP) ", 
+        "artist": "Maxwell",
         "price": "$39.99", 
-        "description": " An album that defines easy categorization, described as Anti-establishment, anti-expectations, and anti-colonial. An album of experimentation, showcasing Rihanna's vocal versatility and exploration of different genres. This album is considered to be her most compelling and personal work.",
-        "image": "images/Rihanna_-_Anti.png"
+        "description": "Maxwell's debut album is a smooth, timeless masterpiece that helped definte the neo-soul era. Maxwell's Urban Hang Suite flows like a love story told in twelve chapters - intimate, sensual, and sonically rich. A sophisted concept album about love and connection, Urban Hang Suite remains one of the most celebrated debuts in modern R&B.",
+        "image": "images/maxwell.png"
     },
      {
-        "name": "The Low End Theory - A Tribe Called Quest (2-LP)", 
+        "name": "The Low End Theory (1-LP)", 
+        "artist": "A Tribe Called Quest",
         "price": "$29.99", 
         "description": " A Tribe Called Quest's sophomore alnbum. This is considered to be a landmark albumm in hip-hop, known for its innovative blend of jazz and hardcore hip-hop, its intricate sampling, and its unique sound characterized by a focus on low-end frequencies.",
         "image": "images/low-end-theory.jpg"
     },
      {
-        "name": "Songs In The Key of Life - Stevie Wonder (2-LP)", 
+        "name": "Black on Both Sides (2-LP)",
+        "artist": "Mos Def", 
+        "price": "$37.99", 
+        "description": "Black on Both Side marked Mos Def's arrival as one of hip-hop's sharpest lyricists and thinkers. His debut balances poetric introspection with social commenrary, weaving jazz, funk and live instrumentation into its golden-age boom-bap roots. A foundational record in conscious rap, Black on Both Sides showcases Mod Def's effortless blend of intellect, rhythm, authenticity.",
+        "image": "images/mos.jpg"
+    },
+     {
+        "name": "1st Born Second (2-LP)", 
+        "artist": "Bilal",
         "price": "$45.99", 
-        "description": "Stevie Wonder's magnum opus and one of the most significant albums in popular music history. The album is a culmination of a period of extraordinary creativity for Stevie Wonder, demonstrating his mastery of songwriting, arrangement, and multi-instrumental performance.",
-        "image": "images/Songs_in_the_key_of_life.jpg"
+        "description": "1st Born Second is the 2001 debut neo-soul R&B/hip hop album by American singer, songwriter and record producer Bilal. He got signed by Interscope Records in his sophomore year, whereupon he left school. The debut album features contributions from Robert Glasper, Questlove, the SoulQuarians and productions from Bilal, Dr. Dre, Questlove of The Roots, Raphael Saadiq and Jay Dee aka J Dilla. His first single 'Soul Sista' charted on the Top R&B/Hip-Hop Songs charts. The album also features the successful singles 'Fast Lane' featuring Dr. Dre & Jadakiss and 'Reminisce' featuring Mos Def and Common. Furthermore, Bilal was part of the 90's influential neo-soul collective The Soulquarians with members D'Angelo, Q-Tip, Common and Questlove.",
+        "image": "images/bilal.png"
     },
      {
-        "name": "Illmatic - Nas (1-LP)", 
-        "price": "$23.99", 
-        "description": "His critically acclaimed studio album. Illmatic is regarded as a classic of East Coast Hip-Hop and is celebrated for its intricate storytelling, raw lyricism, and vivid description of life in the Queensbridge housiing projects.",
-        "image": "images/IllmaticNas.jpg"
+        "name": "Be (2-LP)", 
+         "artist": "Common",
+        "price": "$30.99", 
+        "description": "Elegant and purposeful, Be captures the beauty of simplicity adn soul in hip-hop. Produced primarily by Kanye West with contributions from J Dilla, the album is rooted in warm baselines, gospel samples, and sharp lyricism.",
+        "image": "images/common.jpg"
     },
      {
-        "name": "What's Going On - Marvin Gaye (1-LP)", 
-        "price": "$29.99", 
-        "description": "A concept album that explores social issues like Vietnam War, environmental injustice, and economic disparities. A soulful masterpiece that uses introspective lyrics and a unified song cycle to address these themes, with a focus on experiences of a Vietnam veteran returning home to a trouble society.",
-        "image": "images/marvin.jpg"
-    },
-     {
-        "name": "My Life - Mary J. Blige (2-LP)", 
-        "price": "$32.99", 
-        "description": "From the Queen of Hip-Hop Soul, My Life is a deeply personal and vulnerable work, where Blige explores themes of love, loss, and resiliance through a blend of vintage soul samples and hip-hop elements.",
-        "image": "images/my-life.jpg"
+        "name": "Do You Want More?!!!?! (2-LP)", 
+        "artist": "The Roots",
+        "price": "$35.99", 
+        "description": "Vibrant, improvisational, and full of musical depth, Do You Want More?!!!?! captures The Roots at their creative beginning, fusing hip-hop lyricism with the soul and spirit of live jazz sessions. Black Thought's lyrical precision pairs perfectl;y with Questlove's drums and the band's lush grooves, creating a record that feels both spontaneous and deeply crafted.",
+        "image": "images/roots.jpg"
         
     },
      {
-        "name": "Speakerboxxx/The Love Below - Outkast (4-LP)", 
+        "name": "Brown Sugar", 
+        "artist": "D'Angelo", 
         "price": "$44.99", 
-        "description": "A double album by the hip-hop duo Outkast. Speakerboxxx is a Southern hip-hop album with a P-Funk influence, while The Love Below explores funk, pop, psychedelic, and jazz styles.",
-        "image": "images/Speakerboxxx-The_Love_Below.png"
+        "description": "D'Angelo's debut album ignited the neo-soul movement with its smooth grooves, live instrumentation, and undeniable charm. Brown Sugar blends old-school funk and gospel influences with a contemporary edge. This albymm embodies the warmth and intimacy that would define his career.",
+        "image": "images/brown.png"
     }
 ]
-
