@@ -1,5 +1,5 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+import {Helmet} from "react-helmet"; //title of website
 import Config from "../Config.json";
 
 const TITLE = Config.SITE_TITLE + " | Records For Sale";
@@ -14,7 +14,8 @@ class Shop extends React.Component{
                 <meta name = "description" content={DESC}/>
                 </Helmet>
                 <h1 className="page-title">Our Collection</h1>
-                <section id="product-grid" className="product-grid" aria-live="polite"></section>
+                <section id="product-grid" className="product-grid" aria-live="polite">
+                </section>
              </main>);
         }
 }

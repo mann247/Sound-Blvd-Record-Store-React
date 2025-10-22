@@ -4,7 +4,7 @@ import {Helmet} from "react-helmet";
 import Config from "../Config.json";
 // import { Meta } from "react-router-dom";
 import ss from '../images/s&s.jpg';
-import Slider from '../components/Slider.jsx'
+import Slider from '../components/Slider.jsx';
 
 const TITLE = Config.SITE_TITLE + " | Home";
 const DESC = "Welcome to Sound Blvd. Records!";

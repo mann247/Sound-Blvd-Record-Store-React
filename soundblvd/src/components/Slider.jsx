@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react';
 
 // Tiny slider: auto-advances and supports buttons
 export default function Slider({ images = [] }){
@@ -6,7 +6,7 @@ export default function Slider({ images = [] }){
   const t = useRef(null)
 
   useEffect(()=>{
-    t.current = setInterval(()=> setI(prev => (prev + 1) % images.length), 10000)
+    t.current = setInterval(()=> setI(prev => (prev + 1) % images.length), 8000)
     return ()=> clearInterval(t.current)
   }, [images.length])
 

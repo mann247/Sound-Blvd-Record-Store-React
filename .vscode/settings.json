@@ -1,0 +1,19 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "soundblvd-db.cgfkwaa6om1f.us-east-1.rds.amazonaws.com",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "soundblvd-db",
+            "database": "soundblvd",
+            "username": "admin",
+            "askForPassword": true
+        }
+    ]
+}
