@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {Helmet} from "react-helmet";
 import Config from "../Config.json";
-// import { Meta } from "react-router-dom";
 import ss from '../images/s&s.jpg';
 import Slider from '../components/Slider.jsx';
 

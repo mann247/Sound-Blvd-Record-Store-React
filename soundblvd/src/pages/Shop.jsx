@@ -1,9 +1,10 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {Helmet} from "react-helmet"; //title of website
 import Config from "../Config.json";
 
 const TITLE = Config.SITE_TITLE + " | Records For Sale";
 const DESC = "Take a look at this months exclusive offerings.";
+
 
 class Shop extends React.Component{
     render(){
