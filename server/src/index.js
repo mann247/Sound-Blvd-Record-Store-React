@@ -19,7 +19,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import mysql from 'mysql2/promise';
 import {Server} from 'http';
-// import { pool } from './db.js';
+import { pool } from './db.js';
 
 // dotenv.config();
 

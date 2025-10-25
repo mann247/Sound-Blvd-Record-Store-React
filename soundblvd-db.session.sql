@@ -1,0 +1,149 @@
+-- USE soundblvd;
+-- CREATE TABLE products(
+-- id INT AUTO_INCREMENT PRIMARY KEY, 
+-- album_title VARCHAR(255) NOT NULL, 
+-- artist VARCHAR(255) NOT NULL,
+-- product_type VARCHAR(255) NOT NULL,
+-- price DECIMAL(10,2) NOT NULL, 
+-- description TEXT, 
+-- image_url VARCHAR(255)
+-- );
+
+
+-- INSERT INTO products (album_title, artist, product_type, price, description, image_url) VALUES
+-- (  "The Miseducation of Lauryn Hill", 
+--         "Lauryn Hill",
+--         "2 LP",
+--         29.99, 
+--         "The debut solo album from the infamous Miss Lauryn Hill. This concept album explores themes of love, relationships, motherhood, and faith, blending neo-soul, R&B, hip-hop, raggae, and soul genres. The album is noted for its raw, emotional, and personal lyrics, reflecting Lauryn Hill's own experiences and challenges.",
+--         "https://media.pitchfork.com/photos/64b7fd9871e86f1e192e8e38/master/pass/Lauryn-Hill.jpg"
+-- ),
+-- (
+--    "Voodoo", 
+--         "D'Angelo",
+--         "2 LP",
+--         38.99, 
+--         "Released in 2000, Voodoo was the second album by D'Angelo and followed-up his hit album Brown Sugar. Recording sessions for the album took place during 1998 to 1999 at Electric Lady Studios in New York City, featuring an extensive line-up of musicians associated with the Soulquarians musical collective. Produced primarily by D'Angelo, Voodoo features a loose, groove-based funk sound and serves as a departure from the more conventional song structure of Brown Sugar. The album features lyrical themes regarding spirituality, love, sexuality, growth, and fatherhood.",
+--         "https://www.udiscovermusic.com/wp-content/uploads/2018/01/DAngelo-Voodoo.jpg" 
+-- ),
+-- (
+-- "Aijuswanaseing", 
+--         "Musiq Soulchild",
+--         "2 LP",
+--         35.99,
+--         "With his 2000 debut album, Aijuswanaseing (I Just Want to Sing), Musiq Soulchild made an indelible mark on the R&B soundscape. Aijuswanaseing is a remarkable collection of songs that successfully showcases Soulchild's vocal talent and versatility as he crisscrosses the analogous styles of R&B, soul, and rap.",
+--         "https://i.scdn.co/image/ab67616d0000b273f307484a6b0203eae76e176b"
+-- ),
+-- (
+--     "Worldwide Underground (1-LP)", 
+--         "Erykah Badu",
+--         "1 LP",
+--         26.99, 
+--         "A massive return to form for singer / songwriter Erykah Badu's third studio album Worldwide Underground. It is a collection of songs firmly rooted in soul without being nostalgic, recalling a time when ceilings where higher and folk weren't afraid to let the music play. She is surer, braver, directed, focused and a touch lighter. This is a total groove album and is 100% refreshing.",
+--         "https://m.media-amazon.com/images/I/71PVfpv94mL._UF1000,1000_QL80_.jpg"
+-- ),
+-- (
+--     "Who is Jill Scott? Words and Sounds, Vol. 1", 
+--         "Jill Scott",
+--         "2 LP",
+--         35.99, 
+--         "Jill Scott's debut alum is a neo-soul classic that introduced the world to her signature blend of soulful vocals, poetic lyricism, and jazz-infused grooves. Who is Jill Scott? Words and Sounds Vol. 1 moves effortlessly through love, growth, and self-expression. Pressed with rich production and live instrumentation, this album defined the sound of early 2000s soul and remains one of the genre's most essential listens.",
+--         "https://i5.walmartimages.com/seo/Jill-Scott-Who-Is-Jill-Scott-Words-And-Sounds-Vol-1-Music-Performance-Vinyl_6b115bda-27b0-4b14-9fe9-a2091d7c2c1d.6653d1648d5896a9a3e5dbae6ede994e.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
+-- ),
+-- (
+--      "Maxwell's Urban Hang Suite", 
+--         "Maxwell",
+--         "2 LP",
+--         39.99, 
+--         "Maxwell's debut album is a smooth, timeless masterpiece that helped definte the neo-soul era. Maxwell's Urban Hang Suite flows like a love story told in twelve chapters - intimate, sensual, and sonically rich. A sophisted concept album about love and connection, Urban Hang Suite remains one of the most celebrated debuts in modern R&B.",
+--         "https://upload.wikimedia.org/wikipedia/en/4/4c/Maxwell%27s_Urban_Hang_Suite_%28Maxwell_album_-_cover_art%29.jpg"
+-- ),
+-- (
+--       "Midnight Marauders", 
+--         "A Tribe Called Quest",
+--         "1 LP",
+--         29.99, 
+--         "A Tribe Called Quest's sophomore alnbum. This is considered to be a landmark albumm in hip-hop, known for its innovative blend of jazz and hardcore hip-hop, its intricate sampling, and its unique sound characterized by a focus on low-end frequencies.",
+--         "https://www.vinylveritas.com/cdn/shop/files/0001211965.jpg?v=1683559559"
+-- ),
+-- (
+--     "Black on Both Sides (2-LP)",
+--     "Mos Def", 
+--     "2 LP",
+--     37.99, 
+--     "Black on Both Side marked Mos Def's arrival as one of hip-hop's sharpest lyricists and thinkers. His debut balances poetric introspection with social commenrary, weaving jazz, funk and live instrumentation into its golden-age boom-bap roots. A foundational record in conscious rap, Black on Both Sides showcases Mod Def's effortless blend of intellect, rhythm, authenticity.",
+--     "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/MosDefBlackonBothSides.jpg/250px-MosDefBlackonBothSides.jpg"
+-- ),
+-- (
+--         "1st Born Second (2-LP)", 
+--         "Bilal",
+--         "2 LP",
+--         45.99, 
+--         "1st Born Second is the 2001 debut neo-soul R&B/hip hop album by American singer, songwriter and record producer Bilal. He got signed by Interscope Records in his sophomore year, whereupon he left school. The debut album features contributions from Robert Glasper, Questlove, the SoulQuarians and productions from Bilal, Dr. Dre, Questlove of The Roots, Raphael Saadiq and Jay Dee aka J Dilla. His first single 'Soul Sista' charted on the Top R&B/Hip-Hop Songs charts. The album also features the successful singles 'Fast Lane' featuring Dr. Dre & Jadakiss and 'Reminisce' featuring Mos Def and Common.",
+--         "https://m.media-amazon.com/images/I/71bFBPCbIAL._UF1000,1000_QL80_.jpg"
+-- ),
+-- (
+
+--         "Be", 
+--         "Common",
+--          "2 LP",
+--         30.99, 
+--         "Elegant and purposeful, Be captures the beauty of simplicity adn soul in hip-hop. Produced primarily by Kanye West with contributions from J Dilla, the album is rooted in warm baselines, gospel samples, and sharp lyricism.",
+--         "https://upload.wikimedia.org/wikipedia/en/4/41/Common_-_Be.png"
+-- ),
+-- (
+--     "Do You Want More?!!!?!", 
+--     "The Roots",
+--     "2 LP",
+--     35.99, 
+--     "Vibrant, improvisational, and full of musical depth, Do You Want More?!!!?! captures The Roots at their creative beginning, fusing hip-hop lyricism with the soul and spirit of live jazz sessions. Black Thought's lyrical precision pairs perfectl;y with Questlove's drums and the band's lush grooves, creating a record that feels both spontaneous and deeply crafted.",
+--     "https://upload.wikimedia.org/wikipedia/en/9/90/Doyouwantmore.jpg"
+-- ),
+-- (
+--     "Brown Sugar", 
+--     "D'Angelo",
+--     "2 LP", 
+--     44.99, 
+--     "D'Angelo's debut album ignited the neo-soul movement with its smooth grooves, live instrumentation, and undeniable charm. Brown Sugar blends old-school funk and gospel influences with a contemporary edge. This albymm embodies the warmth and intimacy that would define his career.",
+--     "https://i.scdn.co/image/ab67616d0000b2736ad762e3734409edc2c6f7a3"
+-- ),
+-- (
+--        "Jimmy Lee", 
+--         "Raphael Saadiq", 
+--         "2 LP",
+--         29.99, 
+--         "Raphael Saadiq delivers his most personal and hauntingly beautiful work to date. Named after his late brother, the album dives deep into themes of addiction, loss, faith, and redemption. Saadiq's signature analog soul sound meets raw emotion and modern production.",
+--         "https://m.media-amazon.com/images/I/71jOTWgzr1L._UF1000,1000_QL80_.jpg"
+-- ),
+-- (
+--         "Mohogany Soul", 
+--         "Angie Stone", 
+--         "2 LP",
+--         50.99, 
+--         "Mahogany Soul cements Angie Stone's status as one of neo-soul's most authentic voices. Blending warm grooves, live instrumentation, and heartfelt songwriting, the album radiates confidence and emotional depth. Stone delivers timeless soul music rooted in real experience and self-love.",
+--         "https://m.media-amazon.com/images/I/81PtDMUe0KL._UF1000,1000_QL80_.jpg"
+-- ),
+-- (
+--         "When I Get Home", 
+--         "Solange", 
+--         "1 LP",
+--         25.99, 
+--         "Solange's 'When I Get Home' is a meditative exploration of identity, ancestry, and Black Southern expression. Merging jazz, funk, hip-hop, and experimental R&B, the album moves like a dream: hypnotic, abstract, and deeply rooted in Houston's cultural rhythms. Its fluid transitions and minimal production create an immersive experience that invites repeated listening.",
+--         "images/brown.pnghttps://m.media-amazon.com/images/I/71EbqL9TrLL._UF1000,1000_QL80_.jpg"
+-- ),
+-- (
+--         "Lucy Pearl", 
+--         "Lucy Pearl",
+--         "2 LP",
+--         45.99, 
+--         "One-time supergroup formed by Raphael Saadiq (Tony! Toné! Toni!), Dawn Robinson (En Vogue), and Ali Shaheed Muhammad (A Tribe Called Quest), Lucy Pearl delivered a rare blend of soul, R&B, and hip-hop chemistry. The self-titled debut is sleek, playful, and effortlessly cool, Lucy Pearl captures lightning in a bottle, blending the best of three worlds into one unforgettable collaboration.",
+--         "https://i.scdn.co/image/ab67616d0000b2737faa4455bdba540c4599ed6c"
+-- )
+
+
+
+UPDATE products
+SET price = 25.99
+WHERE album_title = 'When I Get Home';
+
+select * from products;
