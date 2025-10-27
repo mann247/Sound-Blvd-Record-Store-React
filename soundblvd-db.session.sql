@@ -142,8 +142,19 @@
 
 
 
-UPDATE products
-SET price = 25.99
-WHERE album_title = 'When I Get Home';
+-- UPDATE products
+-- SET image_url = 'https://media.pitchfork.com/photos/64b8093f88ee50644a41726b/1:1/w_3000,h_3000,c_limit/Solange-When-I-Get-Home.jpg'
+-- WHERE album_title = 'When I Get Home';
 
+-- UPDATE products
+-- SET album_title = 'Worldwide Underground'
+-- WHERE artist = 'Erykah Badu';
+
+-- UPDATE products
+-- SET album_title = 'Black on Both Sides'
+-- WHERE artist = 'Mos Def';
+
+-- UPDATE products
+-- SET album_title = '1st Born Second'
+-- WHERE artist = 'Bilal';
 select * from products;
