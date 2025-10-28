@@ -1,17 +1,3 @@
-//post request
-//use postman to save the db
-// manually put in there
-//Use that database to render products to the products page
-    //get request or post request 
-
-// Create const
-
-// create connection for express and port # your using
-
-// app.use for your middleware
-
-// give the call for what your route is to fetch from front end
-// app.use + listen 
 import dotenv from 'dotenv';
 import express from 'express';
 import cors from 'cors';
@@ -35,48 +21,48 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static(BUILD_PATH));
 
-let db;
-const connectAndStart = async () => {
-    try{
-        // 1. Establish Database Connection
-        db = await mysql.createPool({
-            host: process.env.DB_HOST,
-            user: process.env.DB_USER,
-            database: process.env.DB_NAME,
-            password: process.env.DB_PASS
-        });
-        await db.query('SELECT 1');
-        console.log('Connected to database');
-
-        // 2. Define API Routes
-        app.get('/api/products', async (req,res) => {
-            try{
-                const [rows] = await db.query('SELECT * FROM products');
-                res.json(rows);
-            }catch (err){
-                console.error(err);
-                res.status(502).json({ error: 'Database query failed.'});
-            }
-        });
-
-        app.use(express.static(BUILD_PATH));
-
-        app.get(/.*/, (req,res) =>{
-            res.sendFile(path.join(BUILD_PATH, 'index.html'));
-        });
-
-        // 4. Start Server
-        app.listen(PORT, () => {
-            console.log(`Server is running on http://localhost:${PORT}`);
-        });
-
-    }catch (err){
-        console.error('Database connection failed:', err);
-        process.exit(1); // Exit if connection fails
+let dbPool;
+const initializeDbPool = async () => {
+    if (!dbPool) {
+        try {
+            dbPool = await mysql.createPool({
+                host: process.env.DB_HOST,
+                user: process.env.DB_USER,
+                database: process.env.DB_NAME,
+                password: process.env.DB_PASS
+            });
+            console.log('✅ Database Pool Initialized');
+        } catch (err) {
+            console.error('❌ Database connection failed:', err);
+            throw new Error('Database connection failed.');
+        }
     }
 };
 
-connectAndStart();
+// Middleware to ensure DB pool is ready before processing the request
+app.use(async (req, res, next) => {
+    try {
+        await initializeDbPool();
+        req.db = dbPool; // Attach the pool to the request object
+        next();
+    } catch (error) {
+        res.status(500).json({ error: 'Server initialization error.' });
+    }
+});
+
+// Define API Route (Uses the attached pool)
+app.get('/api/products', async (req, res) => {
+    try {
+        const [rows] = await req.db.query('SELECT * FROM products');
+        res.json(rows);
+    } catch (err) {
+        console.error('Database query error:', err);
+        res.status(502).json({ error: 'Database query failed.' });
+    }
+});
+
+// 💡 CRITICAL: Export the app instance for Vercel
+export default app;
 
 
 
