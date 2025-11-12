@@ -1,5 +1,13 @@
-html, body{
+html, body, #root{
     height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 body{
@@ -143,6 +151,16 @@ h4{
 }
 
 /* Product Grid (mobile)*/
+
+.filter-controls{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
 .product-grid{
     display: grid;
     grid-template-columns: 1fr; 

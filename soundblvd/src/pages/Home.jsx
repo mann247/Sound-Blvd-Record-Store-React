@@ -9,7 +9,6 @@ const TITLE = Config.SITE_TITLE + " | Home";
 const DESC = "Welcome to Sound Blvd. Records!";
 
 class Home extends React.Component{
-    
     render(){
          const slides = [
             { src: 'https://image.okayplayer.com/1414799.webp?imageId=1414799&width=960&height=548&format=jpg', alt: 'DAngelo Homage Poster', caption: 'Rest in Peace to Michael Eugene Archer (a.k.a: D-Angelo). Join us on October 17th to celebrate his legacy @ 7PM EST.'},

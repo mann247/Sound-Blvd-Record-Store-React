@@ -46,6 +46,30 @@ const connectAndStart = async () => {
             }
         });
 
+        app.post('/api/contact', (req, res) => {
+                const { name, phone, email, comment } = req.body;
+
+                // 1. Simple backend validation check
+                if (!name || !email) {
+                    console.error('❌ Contact form submission failed: Missing name or email.');
+                    return res.status(400).json({ error: 'Missing required fields (Name or Email).' });
+                }
+
+                console.log(`
+                    ========================================
+                    ✅ NEW CONTACT FORM SUBMISSION RECEIVED
+                    ----------------------------------------
+                    Name: ${name}
+                    Email: ${email}
+                    Phone: ${phone}
+                    Message: ${comment || 'No message provided.'}
+                    ========================================
+                `);
+
+            // 3. Send success response back to the frontend
+                res.status(200).json({ message: 'Submission received and logged successfully!' });
+            });
+
         app.use(express.static(BUILD_PATH));
 
         app.get(/.*/, (req,res) =>{
