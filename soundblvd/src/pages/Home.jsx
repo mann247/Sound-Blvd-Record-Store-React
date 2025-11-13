@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Helmet} from "react-helmet";
 import Config from "../Config.json";
 import ss from '../images/s&s.jpg';
 import Slider from '../components/Slider.jsx';
+import heroImg from '../images/hero-store.jpg';
 
-const TITLE = Config.SITE_TITLE + " | Home";
+const TITLE = `${Config.SITE_TITLE} | Home`;
 const DESC = "Welcome to Sound Blvd. Records!";
 
-class Home extends React.Component{
+export default class Home extends React.Component{
     render(){
          const slides = [
             { src: 'https://image.okayplayer.com/1414799.webp?imageId=1414799&width=960&height=548&format=jpg', alt: 'DAngelo Homage Poster', caption: 'Rest in Peace to Michael Eugene Archer (a.k.a: D-Angelo). Join us on October 17th to celebrate his legacy @ 7PM EST.'},
@@ -18,14 +18,13 @@ class Home extends React.Component{
 
         return (
         <main>
-            <Helmet>
+            <>
                 <title> {TITLE} </title>
                 <meta name = "description" content={DESC}/>
-            </Helmet>
-        {/* <!-- Hero Image--> */}
-        {/* change to className */}
+            </>
+
         <section className="hero"> 
-            <img className="hero-img" src={require('/Users/nmanningrth/Desktop/ecommerce v2.1/soundblvd/src/images/hero-store.jpg')} alt="Sound Blvd. Records interior" loading="eager" decoding="async"/>
+            <img className="hero-img" src={heroImg} alt="Sound Blvd. Records interior" loading="eager" decoding="async"/>
             <div className="hero-text">
                 <h2>Welcome to the Sound!🎧🎶</h2>
                 <p>Your one stop shop for everything Neo-Soul!</p>
@@ -33,6 +32,11 @@ class Home extends React.Component{
             </div>
         </section>
 
+ {/* Slider??? */}
+         <section>
+               <h2 id="home-events" >Upcoming Events 🗓️🎶</h2>
+                    <Slider images={slides} />
+         </section>
         
          {/* <!-- About section--> */}
           <section className="about" aria-label="about-heading">
@@ -59,16 +63,6 @@ class Home extends React.Component{
                 <Link to="/Shop" className="btn about-btn"> Shop Our Collection</Link>
             </div>
         </section>
-
-        {/* Slider??? */}
-         <section>
-               <h2 id="home-events" >Upcoming Events 🗓️🎶</h2>
-                    <Slider images={slides} />
-         </section>
-
     </main>);
     }
 }
-
-
-export default Home;

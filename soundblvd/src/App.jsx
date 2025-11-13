@@ -1,16 +1,16 @@
 // import logo from './logo.svg';
-import Home from "./pages/Home";
-import Shop from "./pages/Shop";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home.jsx";
+import Shop from "./pages/Shop.jsx";
+import Contact from "./pages/Contact.jsx";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import {Routes, Route} from "react-router-dom";
 import './App.css';
 
 
 
-function App() {
+export default function App() {
   return (
     <div>
           <Header />
@@ -23,5 +23,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Helmet} from "react-helmet"; //title of website
+// import {Helmet} from "react-helmet"; //title of website
 import Config from "../Config.json";
 import ProductCard from "../components/ProductCard";
 
@@ -81,10 +81,11 @@ function Shop() {
 
     return (
         <main>
-            <Helmet>
+               <>
                 <title> {TITLE} </title>
-                <meta name="description" content={DESC} />
-            </Helmet>
+                <meta name = "description" content={DESC}/>
+            </>
+
             <h1 className="page-title">Our Collection</h1>
 
             <div className="filter-controls">

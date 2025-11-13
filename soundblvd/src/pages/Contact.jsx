@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import Config from "../Config.json";
 
 const TITLE = Config.SITE_TITLE + " | Contact Us";
@@ -126,10 +126,10 @@ function Contact() {
 
     return (
         <main>
-            <Helmet>
+               <>
                 <title> {TITLE} </title>
                 <meta name = "description" content={DESC}/>
-            </Helmet>
+            </>
             <h1> Contact Us</h1>
             <div>
                 <p id="contact_form_info"> We would love to hear about your experience with Sound Blvd. Records. Sound Blvd. Records is a black & women-owned record store in Charlotte, NC. We sell LP's CDs, 7"s, cassettes, record storage & cleaning supplies, turntables, and anything you can name to help grow your record collection.</p>
