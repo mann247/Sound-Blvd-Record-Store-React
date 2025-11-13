@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Config from "../Config.json";
-import ss from '../images/s&s.jpg';
+import ss from '../assets/s&s.jpg';
+import heroImg from '../assets/hero-store.jpg';
 import Slider from '../components/Slider.jsx';
-import heroImg from '../images/hero-store.jpg';
 
 const TITLE = `${Config.SITE_TITLE} | Home`;
 const DESC = "Welcome to Sound Blvd. Records!";

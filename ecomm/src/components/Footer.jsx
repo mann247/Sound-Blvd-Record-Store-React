@@ -1,7 +1,7 @@
 import React from "react";
-import instagram from '../images/instagram.png';
-import twitter from '../images/twitter.png';
-import medium from '../images/medium.png';
+import instagram from '../assets/instagram.png';
+import twitter from '../assets/twitter.png';
+import medium from '../assets/medium.png';
 
 class Footer extends React.Component{
     render(){

@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-// import {Helmet} from "react-helmet"; //title of website
 import Config from "../Config.json";
 import ProductCard from "../components/ProductCard";
 
@@ -71,7 +70,7 @@ function Shop() {
     const handleTypeChange = (e) => setFilterType(e.target.value);
     const handlePriceChange = (e) => setFilterPrice(e.target.value);
 
-    //edge case to ensure records are rendered properly
+  
     if (loading) {
         return <main><h1 className="page-title">Loading records...</h1></main>;
     }
