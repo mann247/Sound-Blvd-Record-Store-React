@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build", 
+    "build": "vite build",
     "preview": "vite preview"
   },
   "eslintConfig": {
@@ -40,5 +40,8 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:3000"
+  "proxy": "http://localhost:3000",
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.53.2"
+  }
 }
