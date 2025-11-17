@@ -334,4 +334,14 @@ footer{
     .about p{
         font-size: 1rem;
     }
+    .filter-controls{
+        flex-direction: column;
+        gap: 12px;
+        width: 90%;
+        align-items: stretch;
+    }
+    .filter-controls > * {
+        width: 100%;
+        font-size: 1rem;
+    }
 }
