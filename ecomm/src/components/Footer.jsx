@@ -7,7 +7,6 @@ class Footer extends React.Component{
     render(){
         return (
            <footer className="social-media">
-             {/* <p>&copy; 2025 Sound Blvd. Records</p> */}
             <div className="social-media">
             <a href="https://instagram.com/sound.blvd_" aria-label="Instagram" target="_blank"><img src={instagram} alt="instagram logo"/></a>
             <a href="https://x.com/sound_blvd" aria-label="Twitter" target="_blank"><img src={twitter}alt="twitter logo"/></a>

@@ -29,11 +29,10 @@ const ProductCard = ({ product }) => {
             {/* 3. Price and Type */}
             <p className="product-type">{product_type}</p>
             <p className="price">
-                {/* Ensure price is displayed as currency with two decimals */}
                 ${parseFloat(price).toFixed(2)} 
             </p>
             
-            {/* 4. Description (Typically short or hidden on a card, but included for completeness) */}
+            {/* 4. Description*/}
             <p className="description-preview">{description}</p>
             
             {/* 5. Action Button */}

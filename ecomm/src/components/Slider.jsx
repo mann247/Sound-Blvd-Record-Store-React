@@ -119,7 +119,7 @@ export default function Slider({ images = [] }) {
   );
 }
 
-// Shared arrow button style
+// arrow button style
 const arrowStyle = {
   background: "rgba(0, 0, 0, 0.5)",
   border: "none",
