@@ -110,7 +110,7 @@ function Contact() {
             throw new Error(errorData.error || `Server error: ${response.status}`);
         }
 
-        alert('Thank you for filling out the form! Your message has been received (logged on the server).');
+        alert('Thank you for filling out the form! Your message has been received, we will reach back soon.');
         setFormData(initialFormState); 
         
     } catch (error) {

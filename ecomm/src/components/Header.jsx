@@ -9,7 +9,7 @@ class Header extends React.Component{
                     <nav>
                         <NavLink to= "/">Home</NavLink>
                         <NavLink to="/Shop">Shop</NavLink>
-                        <NavLink to="/Contact">Contact Us</NavLink>
+                        <NavLink to="/Contact">Contact</NavLink>
                     </nav>
                 </div>
             </header>
