@@ -36,10 +36,10 @@ export default function Slider({ images = [] }) {
         marginBottom: 20,
       }}
 
-      // 🔥 PAUSE slider when hovering anywhere on the slider
+      //  Pause slider when hovering on the slider
       onMouseEnter={stopSlider}
 
-      // 🔥 RESUME slider when leaving
+      // Resume slider when leaving
       onMouseLeave={startSlider}
     >
       {/* IMAGE */}
