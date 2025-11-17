@@ -58,7 +58,7 @@ function Shop() {
                 // If it's a range (e.g., '25-50')
                 matchesPrice = productPrice >= min && productPrice <= max;
             } else {
-                // If it's an upper bound (e.g., '50+') - Note: We used '50-999' as the upper bound filter option.
+                // If it's an upper bound (e.g., '50+')
                 matchesPrice = productPrice >= min;
             }
         }

@@ -3,7 +3,7 @@ import React from 'react';
 // The component receives the 'product' object as a prop
 const ProductCard = ({ product }) => {
     
-    // Destructure using your EXACT database keys
+    // Destructure using database keys
     const { 
         id, 
         album_title, 

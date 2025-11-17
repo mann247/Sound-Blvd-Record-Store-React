@@ -33,7 +33,7 @@ const connectAndStart = async () => {
         await db.query('SELECT 1');
         console.log('Connected to database');
 
-        // 2. Define API Routes
+
         app.get('/api/products', async (req,res) => {
             try{
                 const [rows] = await db.query('SELECT * FROM products');
@@ -44,44 +44,13 @@ const connectAndStart = async () => {
             }
         });
 
-        app.post('/api/contact', (req, res) => {
-                const { name, phone, email, comment } = req.body;
-
-                // 1. Simple backend validation check
-                if (!name || !email) {
-                    console.error('❌ Contact form submission failed: Missing name or email.');
-                    return res.status(400).json({ error: 'Missing required fields (Name or Email).' });
-                }
-
-                console.log(`
-                    ========================================
-                    ✅ NEW CONTACT FORM SUBMISSION RECEIVED
-                    ----------------------------------------
-                    Name: ${name}
-                    Email: ${email}
-                    Phone: ${phone}
-                    Message: ${comment || 'No message provided.'}
-                    ========================================
-                `);
-
-            // 3. Send success response back to the frontend
-                res.status(200).json({ message: 'Submission received and logged successfully!' });
-            });
-
-        app.use(express.static(BUILD_PATH));
-
-        app.get(/.*/, (req,res) =>{
-            res.sendFile(path.join(BUILD_PATH, 'index.html'));
-        });
-
-        // 4. Start Server
         app.listen(PORT, () => {
             console.log(`Server is running on http://localhost:${PORT}`);
         });
 
     }catch (err){
         console.error('Database connection failed:', err);
-        process.exit(1); // Exit if connection fails
+        process.exit(1);
     }
 };
 

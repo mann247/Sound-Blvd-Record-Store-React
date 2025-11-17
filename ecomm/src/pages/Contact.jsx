@@ -28,7 +28,7 @@ function Contact() {
     // --- Validation Function (Core Logic) ---
     const validate = (data) => {
         let currentErrors = {};
-        const phoneRegex = /^\d{3}-\d{3}-\d{4}$/; // Matches 704-XXX-XXXX format
+        const phoneRegex = /^\d{3}-\d{3}-\d{4}$/; // 704-XXX-XXXX format
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const nameRegex = /^[A-Za-z\s'-]+$/; // Letters, spaces, hyphens, and apostrophes
         
@@ -97,26 +97,13 @@ function Contact() {
         console.log('Form Submitted with Data:', formData);
         
         try {
-        // This is the fetch call that POSTs the JSON data to your simplified Express route:
-        const response = await fetch('/api/contact', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(formData)
-        });
-
-        if (!response.ok) {
-            // Handle HTTP errors (e.g., status 400 from the backend validation)
-            const errorData = await response.json();
-            throw new Error(errorData.error || `Server error: ${response.status}`);
-        }
-
         alert('Thank you for filling out the form! Your message has been received, we will reach back soon.');
         setFormData(initialFormState); 
         
     } catch (error) {
         console.error('Contact Form Submission Failed:', error);
         alert('Submission failed. Please check the console for server details.');
-        setErrors(prev => ({ ...prev, form: 'Submission failed due to server error.' }));
+        setErrors(prev => ({ ...prev, form: 'Submission failed.' }));
     } finally {
         setIsSubmitting(false);
         setErrors(initialErrorState);
