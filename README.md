@@ -1,29 +1,32 @@
 # 💽 Sound-Blvd-Record-Store
 
-A vinyl inspired e-commerce website built with HTML, CSS, and JavaScript. Users can browse albums, explore product details, and contact the store through a functional form.
+A React-based e-commerce application inspired by vinyl culture and music discovery. This project is a React rebuild of the original Sound Blvd. Record Store, focused on component architecture, dynamic data rendering, and modern front-end development practices.
 
-⚡️ Features
-1. Home Page
-   - Hero Banner and "About Us" Section
-   - Slider image of featured albums linking to the product page
-2. Product Page
-   - 12 albums from artists including:
-         1. Lauryn Hill
-         2. Erykah Badu
-         3. Michael Jackson
-         4. Outkast
-   - Dynamic product loading from a JSON file
-3. Contact Page
-   - Name, Email, and Message form inputs
-   - Clint-side validation with user-friendly error handling
-   
-   
-💻 Technology Used
+The application allows users to browse vinyl records, explore product details, and experience a clean, music-centric shopping interface.
 
-1. HTML5
-2. CSS3
-3. JavaScript
-4. React
+# 🚀 Features
+
+1. React component-based architecture
+
+2. Dynamic rendering of vinyl products
+
+3. Organized product grid layout
+
+4. Clean, responsive UI inspired by real record stores
+
+5. Scalable structure for future e-commerce features
+
+# 🛠️ Technologies Used
+
+1. React.js
+
+2. JavaScript (ES6+)
+
+3. HTML5
+
+4. CSS3
+
+5. Amazon RDS: MySQL for vinyl data
 
 
 👩🏾‍💻Author
